@@ -1,0 +1,101 @@
+\doxysection{Load\+Balancer Class Reference}
+\hypertarget{class_load_balancer}{}\label{class_load_balancer}\index{LoadBalancer@{LoadBalancer}}
+
+
+{\ttfamily \#include $<$loadbalancer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_load_balancer_aadce25e64ae282fa00634c05b343122e}{Load\+Balancer}} (int min\+Servers, int max\+Servers, int queue\+Size, std\+::ostream \&log\+Stream)
+\item 
+\mbox{\hyperlink{class_load_balancer_a69951a7bb77be7fafd4d5ad6919abd80}{\texorpdfstring{$\sim$}{\string~}\+Load\+Balancer}} ()
+\item 
+void \mbox{\hyperlink{class_load_balancer_a1e5349476e2e9b92a685ba0a52bef649}{manage\+Servers}} ()
+\item 
+void \mbox{\hyperlink{class_load_balancer_a21fe985c018f2ebeb9e4b1b3cc0289fa}{distribute\+Requests}} ()
+\item 
+void \mbox{\hyperlink{class_load_balancer_ac1e1ed080cba145743b288f0a5b21307}{add\+Request}} (\mbox{\hyperlink{class_request}{Request}} req)
+\item 
+void \mbox{\hyperlink{class_load_balancer_a20025da883faabfd472baf59a9318fd5}{remove\+Request}} ()
+\item 
+void \mbox{\hyperlink{class_load_balancer_a7b83bc6336a6491a7cb011d92643828d}{balance\+Load}} ()
+\item 
+void \mbox{\hyperlink{class_load_balancer_a51766d7e1cdae595b9f61d50d9c32245}{allocate\+Server}} ()
+\item 
+void \mbox{\hyperlink{class_load_balancer_a54127610cec2d207b22574d66d1ec17a}{deallocate\+Server}} ()
+\item 
+int \mbox{\hyperlink{class_load_balancer_ad2b3d3c28b4aef4bc64f6a9429e3e95c}{get\+Queue\+Size}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_load_balancer_aadce25e64ae282fa00634c05b343122e}\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{LoadBalancer()}{LoadBalancer()}}
+{\footnotesize\ttfamily \label{class_load_balancer_aadce25e64ae282fa00634c05b343122e} 
+Load\+Balancer\+::\+Load\+Balancer (\begin{DoxyParamCaption}\item[{int}]{min\+Servers}{, }\item[{int}]{max\+Servers}{, }\item[{int}]{queue\+Size}{, }\item[{std\+::ostream \&}]{log\+Stream}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_load_balancer_a69951a7bb77be7fafd4d5ad6919abd80}\index{LoadBalancer@{LoadBalancer}!````~LoadBalancer@{\texorpdfstring{$\sim$}{\string~}LoadBalancer}}
+\index{````~LoadBalancer@{\texorpdfstring{$\sim$}{\string~}LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LoadBalancer()}{\string~LoadBalancer()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a69951a7bb77be7fafd4d5ad6919abd80} 
+Load\+Balancer\+::\texorpdfstring{$\sim$}{\string~}\+Load\+Balancer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_load_balancer_ac1e1ed080cba145743b288f0a5b21307}\index{LoadBalancer@{LoadBalancer}!addRequest@{addRequest}}
+\index{addRequest@{addRequest}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{addRequest()}{addRequest()}}
+{\footnotesize\ttfamily \label{class_load_balancer_ac1e1ed080cba145743b288f0a5b21307} 
+void Load\+Balancer\+::add\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_request}{Request}}}]{req}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_load_balancer_a51766d7e1cdae595b9f61d50d9c32245}\index{LoadBalancer@{LoadBalancer}!allocateServer@{allocateServer}}
+\index{allocateServer@{allocateServer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{allocateServer()}{allocateServer()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a51766d7e1cdae595b9f61d50d9c32245} 
+void Load\+Balancer\+::allocate\+Server (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_load_balancer_a7b83bc6336a6491a7cb011d92643828d}\index{LoadBalancer@{LoadBalancer}!balanceLoad@{balanceLoad}}
+\index{balanceLoad@{balanceLoad}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{balanceLoad()}{balanceLoad()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a7b83bc6336a6491a7cb011d92643828d} 
+void Load\+Balancer\+::balance\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_load_balancer_a54127610cec2d207b22574d66d1ec17a}\index{LoadBalancer@{LoadBalancer}!deallocateServer@{deallocateServer}}
+\index{deallocateServer@{deallocateServer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{deallocateServer()}{deallocateServer()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a54127610cec2d207b22574d66d1ec17a} 
+void Load\+Balancer\+::deallocate\+Server (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_load_balancer_a21fe985c018f2ebeb9e4b1b3cc0289fa}\index{LoadBalancer@{LoadBalancer}!distributeRequests@{distributeRequests}}
+\index{distributeRequests@{distributeRequests}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{distributeRequests()}{distributeRequests()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a21fe985c018f2ebeb9e4b1b3cc0289fa} 
+void Load\+Balancer\+::distribute\+Requests (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_load_balancer_ad2b3d3c28b4aef4bc64f6a9429e3e95c}\index{LoadBalancer@{LoadBalancer}!getQueueSize@{getQueueSize}}
+\index{getQueueSize@{getQueueSize}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getQueueSize()}{getQueueSize()}}
+{\footnotesize\ttfamily \label{class_load_balancer_ad2b3d3c28b4aef4bc64f6a9429e3e95c} 
+int Load\+Balancer\+::get\+Queue\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_load_balancer_a1e5349476e2e9b92a685ba0a52bef649}\index{LoadBalancer@{LoadBalancer}!manageServers@{manageServers}}
+\index{manageServers@{manageServers}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{manageServers()}{manageServers()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a1e5349476e2e9b92a685ba0a52bef649} 
+void Load\+Balancer\+::manage\+Servers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_load_balancer_a20025da883faabfd472baf59a9318fd5}\index{LoadBalancer@{LoadBalancer}!removeRequest@{removeRequest}}
+\index{removeRequest@{removeRequest}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{removeRequest()}{removeRequest()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a20025da883faabfd472baf59a9318fd5} 
+void Load\+Balancer\+::remove\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{loadbalancer_8h}{loadbalancer.\+h}}\item 
+\mbox{\hyperlink{loadbalancer_8cpp}{loadbalancer.\+cpp}}\end{DoxyCompactItemize}

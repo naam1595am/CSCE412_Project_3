@@ -1,0 +1,35 @@
+\doxysection{loadbalancer.\+h}
+\hypertarget{loadbalancer_8h_source}{}\label{loadbalancer_8h_source}\mbox{\hyperlink{loadbalancer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOADBALANCER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOADBALANCER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{webserver_8h}{webserver.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{request_queue_8h}{requestqueue.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <ostream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_load_balancer}{LoadBalancer}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ std::vector<WebServer*>\ servers;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_request_queue}{RequestQueue}}\ requestQueue;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ minServers;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ maxServers;}
+\DoxyCodeLine{00015\ \ \ \ \ std::ostream\&\ logStream;\ \textcolor{comment}{//\ Reference\ to\ the\ log\ stream}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_load_balancer_aadce25e64ae282fa00634c05b343122e}{LoadBalancer}}(\textcolor{keywordtype}{int}\ minServers,\ \textcolor{keywordtype}{int}\ maxServers,\ \textcolor{keywordtype}{int}\ queueSize,\ std::ostream\&\ logStream);}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_load_balancer_a69951a7bb77be7fafd4d5ad6919abd80}{\string~LoadBalancer}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_balancer_a1e5349476e2e9b92a685ba0a52bef649}{manageServers}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_balancer_a21fe985c018f2ebeb9e4b1b3cc0289fa}{distributeRequests}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_balancer_ac1e1ed080cba145743b288f0a5b21307}{addRequest}}(\mbox{\hyperlink{class_request}{Request}}\ req);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_balancer_a20025da883faabfd472baf59a9318fd5}{removeRequest}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_balancer_a7b83bc6336a6491a7cb011d92643828d}{balanceLoad}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_balancer_a51766d7e1cdae595b9f61d50d9c32245}{allocateServer}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_balancer_a54127610cec2d207b22574d66d1ec17a}{deallocateServer}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_load_balancer_ad2b3d3c28b4aef4bc64f6a9429e3e95c}{getQueueSize}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ New\ method\ to\ get\ current\ queue\ size}}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ }
+
+\end{DoxyCode}
